@@ -31,9 +31,9 @@ export default function App() {
     hasCameraPermission === undefined ||
     hasMicrophonePermission === undefined
   ) {
-    return <Text>Requestion permissions...</Text>;
+    return <Text>Не хватает прав</Text>;
   } else if (!hasCameraPermission) {
-    return <Text>Permission for camera not granted.</Text>;
+    return <Text>Нет разрешения доступа к камере</Text>;
   }
 
   let recordVideo = () => {
